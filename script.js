@@ -6,12 +6,15 @@ function addTask() {
     alert(`You must write something!`)
   } else {
     let li = document.createElement(`li`)
-    li.innerHTML = inputBox.value
-    listContainer.appendChild(li)
+    let span = document.createElement(`span`)
+    span.innerHTML = inputBox.value
+    li.appendChild(span)
     let delBtn = document.createElement(`button`)
     delBtn.innerHTML = `DELETE`
     delBtn.className = `delBtn`
     li.appendChild(delBtn)
+
+    listContainer.appendChild(li)
   }
   inputBox.value = ``
   saveData()
