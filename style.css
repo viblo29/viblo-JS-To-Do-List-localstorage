@@ -44,19 +44,19 @@ button{
 ul li{
     display: flex;
     gap: 20px;
-    cursor: pointer;
 }
 ul li::before{
     content: '☑️ ';
+    cursor: pointer;
 }
 
 ul li.checked span{
-    cursor: text;
     text-decoration: line-through;
 }
 
 ul li.checked::before{
     content: '✅ ';
+    cursor: pointer;
 }
 
 .delBtn{
